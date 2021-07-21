@@ -1,0 +1,13 @@
+<svg width="256" height="256" xmlns="http://www.w3.org/2000/svg">
+ <g>
+  <title>Layer 1</title>
+  <path stroke-width="0" fill="#f2672c" stroke="#000" d="m54.66999,24.03567l0.66204,207.96598l146,0l-0.18367,-145.60204l-60.99055,-62.39796l-85.48781,0.03401l-0.00001,0.00001z" id="svg_5"/>
+  <path fill="#e34e24" stroke="#000" stroke-width="0" opacity="NaN" d="m141.78222,25.07394l-0.06647,61.57667l59.18275,0" id="svg_6"/>
+  <path fill-opacity="0" fill="#ffffff" stroke="#000" d="m54.66917,24.03268l0.66204,207.96598l146,0l-0.18367,-145.60204l-60.99055,-62.39796l-85.48781,0.03401l-0.00001,0.00001z" id="svg_1" stroke-width="3"/>
+  <path fill="#0fffff" stroke="#000" stroke-width="3" opacity="NaN" d="m141.47919,24.77091l-0.06647,61.57667l59.18275,0" id="svg_2" fill-opacity="0"/>
+  <rect rx="4" id="svg_8" height="61.51515" width="113.63636" y="149.57574" x="90.87879" stroke-width="2.6" stroke="#000" fill="#ffffff"/>
+  <text font-style="normal" font-weight="normal" xml:space="preserve" text-anchor="start" font-family="sans-serif" font-size="48" id="svg_7" y="193.81816" x="94.9798" stroke-width="0" stroke="#000" fill="#000000">.html</text>
+  <text xml:space="preserve" text-anchor="start" font-family="monospace" font-size="48" id="svg_10" y="125.03029" x="84.79546" stroke-width="3" stroke="#000000" fill="none">&lt;/&gt;</text>
+ </g>
+
+</svg>

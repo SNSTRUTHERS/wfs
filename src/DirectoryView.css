@@ -1,0 +1,207 @@
+.DirectoryView {
+    display: flex;
+    flex-flow: column;
+    
+    width: 100%;
+}
+
+.DirectoryView > .top {
+    background: #ffffff08;
+
+    font-size: 1rem;
+
+    padding: 0.25em 0;
+
+    position: sticky;
+    
+    width: 100%;
+    height: auto;
+}
+
+.DirectoryView > .preview {
+    background: #00000080;
+    
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+
+    position: sticky;
+    bottom: 0;
+
+    text-align: center;
+}
+.DirectoryView > .preview > p {
+    font-size: 1.2em;
+    font-weight: 300;
+}
+.DirectoryView > .preview > p > a {
+    all: unset;
+
+    cursor: pointer;
+    
+    font-weight: 500;
+
+    text-decoration: underline;
+}
+.DirectoryView > .preview > p > a:hover {
+    color: #d0d0d0;
+}
+.DirectoryView > .preview > p > a:active {
+    color: #b0b0b0;
+}
+
+.DirectoryView .actions {
+    display: flex;
+    align-items: flex-start;
+
+    margin: 1.25em 0;
+}
+.DirectoryView .actions > div {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-top: 1.25em;
+
+    width: 100%;
+}
+.DirectoryView .actions > div > h2 {
+    flex-basis: 100%;
+
+    margin-bottom: 0.25em;
+    margin-top: 0;
+}
+.DirectoryView .actions > div > div {
+    width: 100%;
+}
+.DirectoryView .actions > div > div > * {
+    background: #202020;
+    color: white;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    margin: 0 1%;
+    margin-bottom: 0.3em;
+
+    text-align: center;
+    text-decoration: none;
+
+    height: 4em;
+}
+.DirectoryView .actions > div > div > :hover {
+    background: #303030;
+}
+.DirectoryView .actions > div > div > :active {
+    background: #404040;
+}
+
+.DirectoryView > ul {
+    list-style: none;
+
+    margin: 0;
+    padding: 1rem;
+    padding-bottom: 14em !important;
+
+    width: calc(100% - 2rem);
+}
+
+.DirectoryView.list > ul {
+    flex-flow: column;
+}
+
+.DirectoryView.list > ul > .DirectoryItem {
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+
+    height: 1.75em;
+}
+.DirectoryView.list > ul > .DirectoryItem > * {
+    height: 1.35em;
+    margin: 0 0.5em;
+}
+.DirectoryView.list > ul > .DirectoryItem > span {
+    flex: 1;
+    
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.DirectoryView.list > ul > .DirectoryItem:nth-child(2n + 1) {
+    background: #ffffff20;   
+}
+.DirectoryView.list > ul > .DirectoryItem:nth-child(2n) {
+    background: #ffffff30;
+}
+.DirectoryView.list > ul > .DirectoryItem:hover {
+    background: #ffffff40;
+}
+.DirectoryView.list > ul > .DirectoryItem:active {
+    background: #ffffff48;
+}
+.DirectoryView.list > ul > .DirectoryItem.selected {
+    background: #5080ff80;
+}
+
+.DirectoryView.blocks > ul {
+    display: flex;
+    flex-flow: row wrap;
+}
+.DirectoryView.blocks > ul > .DirectoryItem {
+    cursor: pointer;
+    
+    background: #ffffff20;
+    border-radius: 24px;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+    align-items: center;
+
+    margin: 8px;
+
+    width: 10em;
+    height: 10em;
+}
+.DirectoryView.blocks > ul > .DirectoryItem:hover {
+    background: #ffffff30;
+}
+.DirectoryView.blocks > ul > .DirectoryItem:active {
+    background: #ffffff40;
+}
+.DirectoryView.blocks > ul > .DirectoryItem.selected {
+    background: #5080ff80;
+}
+.DirectoryView.blocks > ul > .DirectoryItem > img {
+    width: 75%;
+}
+.DirectoryView.blocks > ul > .DirectoryItem > span.file-name {
+    display: block;
+
+    padding: 0 0.75em;
+
+    line-height: 1em;
+    
+    margin-bottom: 0.75em;
+    
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    text-align: center;
+    
+    width: calc(100% - 1.5em);
+    height: 1.35em;
+}
+.DirectoryView.blocks > ul > .DirectoryItem > span.created-time,
+.DirectoryView.blocks > ul > .DirectoryItem > span.modified-time {
+    display: none;
+}

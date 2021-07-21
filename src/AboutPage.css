@@ -1,0 +1,119 @@
+.AboutPage {
+    width: calc(100% - 8em);
+    padding: 0 4em;
+}
+
+.AboutPage a,
+.AboutPage > h3 > span {
+    color: white;
+    text-decoration: none;
+}
+.AboutPage a:hover,
+.AboutPage > h3 > span:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+.AboutPage ol a,
+.AboutPage p a,
+.AboutPage ul a {
+    font-style: italic;
+    font-weight: 300;
+}
+
+.AboutPage > ol.parts-nav {
+    all: unset;
+
+    display: block;
+
+    margin-top: 0.5em;
+}
+.AboutPage > ol.parts-nav > * {
+    all: unset;
+    
+    background: #303030;
+
+    display: inline-block;
+
+    padding: 0.25em 1em;
+
+    position: relative;
+}
+.AboutPage > ol.parts-nav li {
+    list-style-type: none;
+}
+.AboutPage > ol.parts-nav a {
+    cursor: pointer;
+}
+.AboutPage > ol.parts-nav > :hover {
+    background: #404040;
+}
+.AboutPage > ol.parts-nav > *:last-child {
+    background: #505050;
+
+    font-style: italic;
+}
+.AboutPage > ol.parts-nav > *:last-child::after {
+    border-left: 0.5em solid #505050;
+}
+.AboutPage > ol.parts-nav > :not(:last-child)::after {
+    content: "";
+
+    border-bottom: 0.5em solid transparent;
+    border-left: 0.5em solid #303030;
+    border-top: 0.5em solid transparent;
+
+    display: inline-block;
+
+    position: absolute;
+    right: calc(-0.5em);
+    top: calc(50% - 0.5em);
+    
+    width: 0;
+    height: 0;
+
+    z-index: 1;
+}
+.AboutPage > ol.parts-nav > :not(:last-child):hover::after {
+    border-left: 0.5em solid #404040;
+}
+
+.AboutPage > h1 {
+    text-align: center;
+}
+
+.AboutPage pre {
+    background: #ffffff10;
+
+    border-radius: 1em;
+    padding: 0.75em;
+}
+.AboutPage pre .comment {
+    color: forestgreen;
+}
+.AboutPage pre .const {
+    color: deepskyblue;
+}
+.AboutPage pre .function {
+    color: khaki;
+}
+.AboutPage pre .keyword {
+    color: mediumpurple;
+}
+.AboutPage pre .number {
+    color: yellowgreen;
+}
+.AboutPage pre .property {
+    color: lightskyblue;
+}
+.AboutPage pre .regexp {
+    color: crimson;
+}
+.AboutPage pre .string {
+    color: sandybrown;
+}
+.AboutPage pre .type {
+    color: springgreen;
+}
+.AboutPage pre .variable {
+    font-style: italic;
+}

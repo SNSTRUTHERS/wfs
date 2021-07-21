@@ -1,0 +1,13 @@
+<svg width="256" height="256" xmlns="http://www.w3.org/2000/svg">
+ <g>
+  <title>Layer 1</title>
+  <path id="svg_5" d="m54.66999,24.03567l0.66204,207.96598l146,0l-0.18367,-145.60204l-60.99055,-62.39796l-85.48781,0.03401l-0.00001,0.00001z" stroke="#000" fill="#f0db4f" stroke-width="0"/>
+  <path id="svg_6" d="m141.78222,25.07394l-0.06647,61.57667l59.18275,0" opacity="NaN" stroke-width="0" stroke="#000" fill="#cebe56"/>
+  <path stroke-width="3" id="svg_1" d="m54.66917,24.03268l0.66204,207.96598l146,0l-0.18367,-145.60204l-60.99055,-62.39796l-85.48781,0.03401l-0.00001,0.00001z" stroke="#000" fill="#ffffff" fill-opacity="0"/>
+  <path fill-opacity="0" id="svg_2" d="m141.47919,24.77091l-0.06647,61.57667l59.18275,0" opacity="NaN" stroke-width="3" stroke="#000" fill="#0fffff"/>
+  <rect fill="#ffffff" stroke="#000" stroke-width="2.6" x="90.87879" y="149.57574" width="113.63636" height="61.51515" id="svg_8" rx="4"/>
+  <text fill="#000000" stroke="#000" stroke-width="0" x="128.31313" y="193.81816" id="svg_7" font-size="48" font-family="sans-serif" text-anchor="start" xml:space="preserve" font-weight="normal" font-style="normal">.js</text>
+  <text xml:space="preserve" text-anchor="start" font-family="monospace" font-size="48" id="svg_10" y="125.03029" x="99.19697" stroke-width="3" stroke="#000000" fill="none">{}</text>
+ </g>
+
+</svg>

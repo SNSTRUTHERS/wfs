@@ -1,0 +1,30 @@
+.GDriveFolderPicker {
+    width: calc(100% - 8em);
+    padding: 0 4em;
+}
+
+.GDriveFolderPicker a {
+    color: white;
+    text-decoration: none;
+}
+.GDriveFolderPicker a:hover {
+    text-decoration: underline;
+}
+
+.GDriveFolderPicker > h1 {
+    text-align: center;
+}
+
+.GDriveFolderPicker select, .GDriveFolderPicker input[type="text"] {
+    margin: 0 0.5em;
+    width: 30%;
+}
+
+.GDriveFolderPicker .folder-picker > p > code {
+    background: #ffffff20;
+    
+    font-size: 0.9em;
+
+    margin: 0 0.5em;
+    padding: 0.1em 0.35em;
+}

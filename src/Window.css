@@ -1,0 +1,190 @@
+.Window {
+    display: block;
+
+    min-width: 128px;
+    min-height: calc(128px + 1.5em);
+}
+.Window.movable {
+    position: absolute;
+}
+
+.Window > .Window-title {
+    background: #383838;
+
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+
+    display: flex;
+    align-items: center;
+
+    font-weight: bold;
+    text-align: left;
+
+    height: 1.25em;
+
+    padding: 0.125em 0.5em;
+}
+.Window.movable > .Window-title {
+    cursor: all-scroll;
+}
+
+.Window > .Window-title > .Window-title-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.Window > .Window-title > span:not(.Window-title-text) {
+    flex: 1;
+    position: relative;
+}
+.Window > .Window-title > span:not(.Window-title-text)::before,
+.Window > .Window-title > span:not(.Window-title-text)::after {
+    content: "";
+    
+    border-bottom: 1px solid #ffffff30;
+    border-top: 1px solid #ffffff30;
+    
+    position: absolute;
+    right: 0.5em;
+
+    width: calc(100% - 1.25em);
+    height: 0.2em;
+}
+.Window > .Window-title > span:not(.Window-title-text)::before {
+    top: -0.4em;
+}
+.Window > .Window-title > span:not(.Window-title-text)::after {
+    top: 0.1em;
+}
+
+.Window > .Window-title > button {
+    all: unset;
+
+    background: white;
+
+    border-radius: 0.75em;
+    border: 1px solid #e0e0e0;
+
+    content: "";
+
+    cursor: pointer;
+
+    margin: 0 0.25em;
+
+    width: 0.75em;
+    height: 0.75em;
+}
+.Window > .Window-title > button.minimize {
+    background: #00c000;
+    border-color: #00ff00;
+}
+.Window > .Window-title > button.minimize:hover {
+    background: #00b000;
+}
+.Window > .Window-title > button.minimize:active {
+    background: #00a000;
+}
+.Window > .Window-title > button.maximize {
+    background: #c0c000;
+    border-color: #ffff00;
+}
+.Window > .Window-title > button.maximize:hover {
+    background: #b0b000;
+}
+.Window > .Window-title > button.maximize:active {
+    background: #a0a000;
+}
+.Window > .Window-title > button.close {
+    background: #c00000;
+    border-color: #ff0000;
+}
+.Window > .Window-title > button.close:hover {
+    background: #b00000;
+}
+.Window > .Window-title > button.close:active {
+    background: #a00000;
+}
+.Window > .Window-title > button:disabled {
+    cursor: default !important;
+    background: grey !important;
+    border-color: #a0a0a0;
+}
+.Window > .Window-title > button:last-child {
+    margin-right: 0;
+}
+
+.Window > .Window-body {
+    background: #202020;
+
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+
+    display: flex;
+    flex-direction: column;
+
+    height: calc(100% - 1.5em);
+
+    margin: 0;
+    padding: 0;
+
+    overflow: auto;
+
+    position: relative;
+
+    text-align: left;
+}
+
+.Window > .Window-body > div.resize-anchor {
+    border-bottom: 2px solid #585858;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+
+    border-left: 2px solid #585858;
+    border-right: 2px solid #686868;
+
+    cursor: ew-resize;
+
+    overflow: auto;
+
+    width: calc(100% - 4px);
+    height: calc(100% - 2px);
+}
+.Window > .Window-body > div.resize-anchor > * {
+    cursor: default;
+}
+.Window > .Window-body > div.resize-anchor::before {
+    content: "";
+
+    background: transparent;
+
+    cursor: ns-resize;
+
+    position: absolute;
+    bottom: 0;
+
+    width: calc(100% - 4px);
+    height: 2px;
+}
+.Window > .Window-body > div.resize-anchor > span.resize-anchor {
+    content: "";
+
+    --size: 0.6rem;
+    
+    border-bottom: var(--size) solid #585858;
+    border-left: var(--size) solid transparent;
+    border-right: var(--size) solid #686868;
+    border-top: var(--size) solid transparent;
+
+    border-bottom-right-radius: inherit;
+
+    cursor: nwse-resize;
+
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    width: 0;
+    height: 0;
+
+    z-index: 2;
+}
