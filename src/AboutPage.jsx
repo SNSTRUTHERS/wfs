@@ -2188,6 +2188,85 @@ const PAGES = {
             >WFSDirectory</span><br />
             {"};"}
         </pre>
+
+        <h2>Predefined Driver Implementations</h2>
+        <h3>IndexedDB</h3>
+        <p>
+            The name <code>"idb"</code> is reserved for a reference Web File
+            System driver included with the library which
+            uses <code>indexedDB</code> as the medium for storing files. The
+            following classes are defined by the driver implementation:
+        </p>
+
+        <pre>
+            <span
+                className="keyword"
+            >class</span> <span
+                className="type"
+            >IDBFile</span> <span
+                className="keyword"
+            >extends</span> <span
+                className="type"
+            >WFSFile</span>;<br />
+            <span
+                className="keyword"
+            >class</span> <span
+                className="type"
+            >IDBDirectory</span> <span
+                className="keyword"
+            >extends</span> <span
+                className="type"
+            >WFSDirectory</span>;
+        </pre>
+
+        <p>
+            Indexed DB drives are mounted via the following interface:
+        </p>
+
+        <pre>
+            <span
+                className="keyword"
+            >class</span> <span
+                className="type"
+            >IDBDirectory</span> <span
+                className="keyword"
+            >extends</span> <span
+                className="type"
+            >WFSDirectory</span>{" {"}<br />{indent(1)}
+            <span
+                className="keyword"
+            >final</span> <span
+                className="keyword"
+            >static</span> <span
+                className="keyword"
+            >async</span> <span
+                className="function"
+            >mount</span>(<br />{indent(2)}
+            <span
+                className="property variable"
+            >parent</span>:  <span
+                className="type"
+            >WFSDirectory</span>?,<br />{indent(2)}
+            <span
+                className="property variable"
+            >idbName</span>: <span
+                className="type"
+            >string</span>,<br />{indent(2)}
+            <span
+                className="property variable"
+            >key</span>?:    <span
+                className="type"
+            >IDBValidKey</span><br />{indent(1)}
+            );<br />
+            {"}"}
+        </pre>
+
+        <p>
+            <i>idbName</i> refers to the name of
+            the <code>IDBDatabase</code> which will contain the file
+            data. <i>key</i> is the database key pointing to the to-be-mounted
+            directory's file data.
+        </p>
     </>
 };
 
