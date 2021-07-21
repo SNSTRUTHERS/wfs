@@ -2161,6 +2161,34 @@ const PAGES = {
             given drive's mounting parameters.
         </p>
     </>,
+
+    "wfsdrivermap": <>
+        <h1>{pathToDisplayText("about/wfsdrivermap")}</h1>
+        <p>
+            To track the link between driver names and implementations, a
+            global object is used. This object is
+            called <code>WFSDriverMap</code>, and has the following
+            specification:
+        </p>
+
+        <pre>
+            <span
+                className="keyword"
+            >const</span> <span
+                className="const variable"
+            >WFSDriverMap</span>{": {"}<br />{indent(1)}
+            [<span
+                className="property variable"
+            >name</span>: <span
+                className="type"
+            >string</span>]: <span
+                className="keyword"
+            >typeof</span> <span
+                className="type"
+            >WFSDirectory</span><br />
+            {"};"}
+        </pre>
+    </>
 };
 
 const AboutPage = ({ pathname, setWindowTitle }) => {
